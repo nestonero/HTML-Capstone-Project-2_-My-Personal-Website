@@ -1,0 +1,160 @@
+
+
+
+.gradient-background {
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.profile-img {
+  height: 90px;
+  border-radius: 50%;
+}
+
+
+h1{
+font-family: "Sacramento", cursive;
+font-size: 85px;
+font-weight:bolder;
+color:#28B89E;
+
+
+}
+
+
+ 
+
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color:#E4F9F5;
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+/* The CSS Grid container definition */
+.grid-container {
+  display: grid;
+  /* Defines 3 columns: first two 1fr each, last one 2fr */
+  grid-template-columns: 1fr ; 
+  /* Defines 2 rows, each 100px tall */
+  grid-template-rows: auto auto auto; 
+  width: 100%;
+   /*  gap: 20px;       Space between grid items */
+  /* padding: 20px; */
+  background-color: #ecf0f1; /* Light gray background for the container itself */
+}
+
+
+
+/* General styling for all sections */
+.section {
+ 
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+/* Specific background colors for each section */
+#section1 { background-color: #E4F9F5; /* Red */ 
+            
+
+}
+#section2 { background-color: #3498db; /* Blue */
+  justify-content: center; 
+           
+}
+#section3 { background-color: #2ecc71; /* Green */ }
+#section4 { background-color: #f1c40f; /* Yellow */ }
+
+
+
+
+
+
+/* Optional: Spanning items across the grid */
+#section4 {
+  /* Starts at column line 1 and ends at column line 4 (which is the end) */
+  grid-column: 1 / 4; 
+}
+
+
+
+
+
+.skills-container{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  width: 60%;
+  /* background-color: black; */
+  padding: 20px;
+  justify-self: center;
+  margin: 0 auto;
+}
+
+
+.skills-container img {
+  height: 200px;
+
+}
+
+
+.skills-text{
+  align-self: center;
+}
+
+
+.footer-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 20%;
+  padding: 0 5px;
+  justify-self: center;
+  font-size: 1.1rem;
+  justify-content: center;
+  gap: 20px;
+
+}
+   
+a {
+  text-decoration: none;
+}
